@@ -225,7 +225,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* Header */}
-      <View style={styles.header}>
+      <View style={[styles.header, !isPlaying && { justifyContent: "center" }]}>
         <Text style={[styles.logo, isPlaying && { fontSize: 24 }]}>
           SOFTY<Text style={styles.logoSpan}>SNAKE</Text>
         </Text>
